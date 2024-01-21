@@ -1,15 +1,15 @@
-homework13
+##Homework13
 ```
 1. На установленой Linux Alpine 3.19 на ВМ установлен Docker 23.0.6 c Docker Compose version v2.17.3
 2. Создан кастомный образ nginx 1.25.3 со следующими изменениями:
 2.1. Изменения в nginx.conf:
-       worker_processes  auto;   -->    worker_processes  1024;      
-       worker_connections  1024; -->    worker_connections  512;
+       worker_processes  auto;   -->    worker_processes  **1024**;      
+       worker_connections  1024; -->    worker_connections  **512**;
 2.2. Изменения в index.html:
-       <title>Welcome to nginx!</title>  --> <title>Welcome to custom nginx!</title>
-       <h1>Welcome to nginx!</h1>        --> <h1>Welcome to homework13!</h1>
+       <title>Welcome to nginx!</title>  --> <title>Welcome to **custom** nginx!</title>
+       <h1>Welcome to nginx!</h1>        --> <h1>Welcome to **homework13**!</h1>
        <p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>  --> <p>If you see this page, the custom nginx web server is successfully installed and
+working. Further configuration is required.</p>  --> <p>If you see this page, the **custom** nginx web server is successfully installed and
 working. Further configuration is required.</p>
 3. Docker образ — это шаблон (физически — исполняемый пакет), из которого создаются Docker-контейнеры. Образ хранит в себе всё необходимое для запуска приложения, помещенного в контейнер: код, среду выполнения, библиотеки, переменные окружения и конфигурационные файлы.Docker-образ создаётся с помощью команды docker build, которая считывает конфигурацию создаваемого образа из специального конфигурационного файла — Dockerfile. В Dockerfile записываются команды и опции создания образа, а также некоторые настройки будущего контейнера, такие как порты, переменные окружения и другие опции. Каждая команда записанная в Dockerfile создаёт свой слой. Чем больше слоёв, тем дольше будет собираться образ и дольше загружаться контейнер. Финальный Docker-образ — это объединение всех слоев в один и после его создания не может быть изменен. Благодаря такому подходу можно переиспользовать уже готовые образа для создания новых образов.
 
