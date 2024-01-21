@@ -1,5 +1,5 @@
-##Homework13
-```
+#Homework13
+
 1. На установленой Linux Alpine 3.19 на ВМ установлен Docker 23.0.6 c Docker Compose version v2.17.3
 2. Создан кастомный образ nginx 1.25.3 со следующими изменениями:
 2.1. Изменения в nginx.conf:
@@ -21,4 +21,4 @@ working. Further configuration is required.</p>
 В интернете можно найти несколько сайтов посвященных этой задаче, например: 
 https://github.com/tomzo/docker-kernel-ide
 https://github.com/0xor0ne/docker-linux-kernel-builder
-```
+
